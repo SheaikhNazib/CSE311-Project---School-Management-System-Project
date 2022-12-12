@@ -1,104 +1,99 @@
 *{
     margin: 0;
     padding: 0;
+}
+
+body
+{
+    
     font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+
+    background: url(image/login_pic.jpg);
+    background-size: cover;
+       
+    background-repeat: no-repeat;
+}
+
+
+.loginbox{
+    width: 25rem;
+    height: 30rem;
+    background:rgba(0, 0, 0, 0.815);
+    color: white;
+    top: 50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
     box-sizing: border-box;
-}
-body{
-    
-    height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),
-    rgba(0, 0, 0, 0.3)), 
-    
-    url(image/priscilla-du-preez-XkKCui44iM0-unsplash.jpg);
-      /* background-repeat: no-repeat;   */
-    background-size:cover;
-    background-position: center;
-    transition: all .3s;
+    padding: 5rem 3rem;
+    box-shadow: 0 0 1rem 2px;
     
 }
-.menu_ber{
-    width: 90%;
-    height: 10rem;
-   margin: 0px auto;
-    
-    
-    
-    
-}
-.menu_ber ul {
-    padding: 0px;
-}
-
-.menu_ber ul li 
+.logo
 {
-    float: left;
-    background-color: black;
-    color: white;
-    width: 15rem;
-    height: 5rem;
-    line-height: 5rem;
-    font-size:1.5rem ;
-    text-align: center;
-    list-style: none;
-    opacity: 0.6;
-
-    /* display: inline-block;
-    padding: 1rem;
-    margin: 1.5rem;
-     width: 10rem;  */
-
-}
- .menu_ber ul li a{
-    text-decoration: none;
-    color: white;
-} 
-
- .menu1,.menu2,.menu4 {
-    display: none;
-}
-.menu_ber ul li:hover .menu1{
-    display: block;
-}
-.menu_ber ul li:hover{
-    background-color: rgba(0, 128, 0, 0.808);
-    opacity: 0.9;
-}
-
-
-
-
-
-
-/* .active,.menu_ber ul li:hover{
-    background:rgba(42, 171, 13, 0.856) ; 
-
-    border-radius: 3px;
-    
-
-}
- .menu1,.menu2,.menu4
-{
-     display: none; 
-} 
-.menu_ber ul li:hover .menu1{
-    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
     position: absolute;
-    background: rgb(0,100,0);
-    margin-top: 1.5rem;
-    margin-left: -1.5rem;
-}
-.menu_ber ul li:hover .menu1 ul li
-{
-    display:block;
-    margin: 10px;
-}
-.menu_ber ul li:hover .menu1 ul li{
-    width: 10rem;
-    padding: 1rem;
-    border-bottom: 1px dotted #fff;
-    background: transparent;
-    border-radius: 1px;
-    text-align: left;
+    top: -1.2%;
+    left: 45%;
 
-} */
+}
+h1
+{
+    margin: 0;
+    padding:0 0 1.8rem ;
+    text-align: center;
+    color: orange;
+    /* color: rgb(30, 154, 211); */
+}
+.form_label{
+    font-weight: bold;
+}
+.form_input
+{
+    width: 100%;
+    margin-bottom:1.5rem ;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 3rem;
+    color: white;
+    font-size: 1rem;
+}
+.form_submit
+{
+    border: none;
+    outline: none;
+    height:3rem ;
+    color:white ;
+    background-color: rgba(42, 149, 175, 0.63);
+    font-size: 1.5rem;
+    border-radius: 8rem;
+    padding: .5rem 3rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    transition: all .3s;
+}
+.form_submit:hover
+{
+    cursor: pointer;
+    background: orange;
+    color: black;
+    font-weight: bold;
+}
+.form_text{
+    text-decoration: none;
+    
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: rgba(169, 169, 169, 0.966);
+
+}
+.form_text:hover
+{
+    color: orange;
+}
