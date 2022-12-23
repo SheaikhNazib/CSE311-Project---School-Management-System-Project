@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2022 at 07:38 PM
+-- Generation Time: Dec 23, 2022 at 10:38 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -50,7 +50,12 @@ INSERT INTO `student_info` (`first_name`, `last_name`, `mother_name`, `father_na
 ('Saroar', 'Mahmud', 'Rokeya Khatun', 'Rahim Hossain', '2013-04-30', 'Cumilla', 'male', 3, 'saroar@gmail.com', 1582458743),
 ('MD.', 'Abul', 'Asma Khatun', 'Akkas Hossain', '2014-03-29', 'Noyakhali', 'male', 4, 'abul@gmail.com', 1982458743),
 ('MD.', 'Babul', 'Bsma Khatun', 'Bkkas Hossain', '2012-07-22', 'Sirajganj', 'male', 5, 'babul@gmail.com', 1785458743),
-('MD.', 'Cabul', 'Casma Khatun', 'Cakkas Hossain', '2014-06-24', 'Narayanganj', 'male', 6, 'cabul@gmail.com', 1783658743);
+('MD.', 'Cabul', 'Casma Khatun', 'Cakkas Hossain', '2014-06-24', 'Narayanganj', 'male', 6, 'cabul@gmail.com', 1783658743),
+('dabul', 'lkdjsafk;s', 'Jorina khatun', 'Kuddus Alom', '2022-12-05', 'Sarulia', 'on', 7, 'rixevem542@covbase.com', 67587575),
+('Md. ', 'Ebul', 'Khaleda', 'Jiyaur', '2022-12-03', 'Sarulia', 'on', 8, 'ebul9374@gmail.com', 90823432),
+('Md. ', 'Fabul', 'Hasina', 'Fardin', '2022-12-20', 'Cumilla', 'on', 9, 'fabul9843@gmail.com', 2147483647),
+('Mohammad', 'Eabul', 'farzin', 'Adnan', '2022-08-25', 'Cumilla', 'on', 10, 'eabul39847@gmail.com', 2147483647),
+('farzin', 'khan', 'Fabiha', 'Bakkar', '2022-11-29', 'Chittagong', 'on', 11, 'farzin93874@gmail.com', 948574252);
 
 -- --------------------------------------------------------
 
@@ -78,7 +83,21 @@ INSERT INTO `teacher_info` (`first_name`, `last_name`, `dob`, `address`, `gender
 ('Shuvo', 'Hossain', '0000-00-00', 'Chittagong', 'male', 'shuvohossain9@gmail.com', 'cse323', 198507810),
 ('Mahmudur', 'Rahman', '0000-00-00', 'Khulna', 'male', 'mahmudur9@gmail.com', 'eee111', 136957810),
 ('Anisul', 'Islam', '0000-00-00', 'Sylhet', 'male', 'anisulr9@gmail.com', 'cse115', 198057810),
-('Monamy', 'Islam', '0000-00-00', 'Barishal', 'female', 'monamy9@gmail.com', 'cse225', 191956810);
+('Monamy', 'Islam', '0000-00-00', 'Barishal', 'female', 'monamy9@gmail.com', 'cse225', 191956810),
+('Mohammad', 'hossain', '2022-12-06', 'Chittagong', 'on', 'mahmud@gmail.com', 'eee141', 2147483647);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables
@@ -89,6 +108,23 @@ INSERT INTO `teacher_info` (`first_name`, `last_name`, `dob`, `address`, `gender
 --
 ALTER TABLE `student_info`
   ADD PRIMARY KEY (`roll_number`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
