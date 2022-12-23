@@ -118,31 +118,31 @@ form{
             <div class="row">
                 <div class="panel-primary">
                     <div class="panel-heading" style="text-align:center;">
-                   
+                       
                     </div>
                     <div class="panel-body">
-                        <form>
+                        <form action="add_teacher.php" method="post">
                             <h1>Teacher Registration Form</h1>
                             <div class="right">
                                 <div class="form-group">
                                     <label for="lastName" class="form_label">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName">
+                                    <input type="text" class="form-control" id="lastName" Name="lastName" value="">
                                 </div>
 
                                
 
                                 <div class="form-group">
                                     <label for="address" class="form_label"> Address </label>
-                                    <input type="text" class=" big" id="address">
+                                    <input type="text" class=" big" id="address" Name="address" value="">
                                 </div>
                                 <div class="form-group">
                                     <label for="subject" class="form_label"> Course</label>
-                                    <input type="text" class=" form-control" id="sumject">
+                                    <input type="text" class=" form-control" id="sumbect" Name="subject" value="">
                                 </div>
                                 
                                 <div class="form-group">
                                     <label for="phone" class="form_label">Phone number</label>
-                                    <input type="number" class="form-control" id="phone">
+                                    <input type="number" class="form-control" id="phone" Name="phone" value="">
                                 </div>
                                                           
                             </div>
@@ -152,18 +152,18 @@ form{
 
                             <div class="form-group">
                                 <label for="firstName" class="form_label">First Name</label>
-                                <input type="text" class="form-control" id="firstName">
+                                <input type="text" class="form-control" id="firstName" Name="firstName" value="">
                             </div>
                          
 
                             <div class="form-group">
                                 <label for="birthday" class="form_label">Date of Birth</label>
-                                <input type="date" class="form-control" >
+                                <input type="date" class="form-control" Name="dob" value="">
                             </div>
 
 
                             <div class="form-group">
-                                <label for="gender" class="form_label">Gender</label> <br><br>
+                                <label for="gender" class="form_label" Name="gender" value="">Gender</label> <br><br>
                                 <div>
                                     <label for="male" class="radio-inline"><input type="radio" name="gender" class="radio-inline-text" id="male">Male</label>
                                     <label for="female" class="radio-inline"><input type="radio" name="gender" id="female">Female</label>
@@ -172,7 +172,7 @@ form{
                             </div>
                             <div class="form-group">
                                 <label for="email" class="form_label">Email id</label>
-                                <input type="text" class="form-control" id="email">
+                                <input type="text" class="form-control" id="email" Name="email" value="">
                             </div>
                             
                             
@@ -185,6 +185,6 @@ form{
             </div>
         </div>
 
-        </form>
+
     </body>
 </html>
