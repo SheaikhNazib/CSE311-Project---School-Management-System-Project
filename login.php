@@ -2,9 +2,9 @@
 include "db_conn.php";
 if(isset($_POST['username']) && isset($_POST['pass'])){
     function validate($data){
-        $data= trim($data);
-        $data= stripslashes($data);
-        $data= htmlspecialchars($data);
+         $data= trim($data);
+         $data= stripslashes($data);
+         $data= htmlspecialchars($data);
         return $data;
     }
     $uname= validate($_POST['username']);
@@ -19,18 +19,19 @@ if(isset($_POST['username']) && isset($_POST['pass'])){
         exit();
     }
     else{
-        $sql = "SELECT * FROM users WHERE username='$uname' AND pass='$pass'";
+        $sql = "SELECT * FROM login_db WHERE username='$uname' AND pass='$pass'";
         $result =mysqli_query($db,$sql);
         if(mysqli_num_rows($result)) {
             echo "Hello";
         }
+        
      
 
     }
 
 }
 else{
-    header("Location:index.php");
+    header("Location:login_part2.php");
     exit();
 }
 ?>
