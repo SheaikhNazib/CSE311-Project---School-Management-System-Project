@@ -4,7 +4,7 @@
     </head>
     <body style="background-color:#81F7F2;">
 
-        <h2>Print Student Information </h2>
+        <h2>Print Teacher Information </h2>
         <table>
                <tr>
                 <td>First_Name</td>
